@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+
+
+
+    <div class="container" onclick="change()">
+
+        <div class="line" id="bar1"></div>
+        <div class="line" id="bar2"></div>
+        <div class="line" id="bar3"></div>
+
+    </div>
+
+
+    <script>
+
+
+        let barOne = document.getElementById('bar1')
+        let barTwo = document.getElementById('bar2')
+        let barThree = document.getElementById('bar3')
+        let count = 0
+
+
+        function change() {
+
+            if (count == 0) {
+                barTwo.style.opacity = "0%";
+                barOne.style.transform = "translate(0px, 9px) rotate(-45deg)";
+                barThree.style.transform = "translate(0px, -7px) rotate(45deg)";
+                
+
+                count = 1
+
+
+            } else if (count == 1) {
+                        
+                barTwo.style.opacity = "100%";
+                barOne.style.transform = "rotate(0deg)";
+                barThree.style.transform = " rotate(0deg)";
+                count = 0
+
+
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

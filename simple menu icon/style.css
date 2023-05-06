@@ -1,0 +1,28 @@
+
+
+
+
+.lineOne{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+}
+
+
+.lineTwo{
+    width: 35px;
+    height: 5px;
+    background-color: red;
+    position: relative;
+    top: 3px;
+}
+
+.lineThree{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(19, 4, 4);
+    position: relative;
+    top: 7px;
+}
+
+
